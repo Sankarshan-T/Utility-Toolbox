@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: #61ce92;
+    background: #3dcf91;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 .app {
     width: 85%;
     max-width: 1000px;
-    background: #32704e;
+    background: #11141d;
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -44,12 +44,12 @@ body {
 h1 {
     font-family: "Fira Code", monospace;
     margin: 0;
-    color: #0c2e22;
+    color: #3dcf91;
 }
 
 p {
     margin: 12px 0 24px;
-    color: #0c2e22;
+    color: #3dcf91;
 }
 
 .panel {
@@ -74,7 +74,7 @@ textarea {
     font-size: 15px;
     overflow-y: auto;
     scrollbar-width: none;
-    background: #61ce92;
+    background: #8dcbb1;
 }
 
 .actions {
@@ -87,8 +87,8 @@ button {
     padding: 10px;
     border: none;
     border-radius: 8px;
-    background: #3b8a72;
-    color: #fff;
+    background: #3dcf91;
+    color: #11141d;
     font-family: "Fira Code", monospace;
     font-size: 16px;
     cursor: pointer;
