@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="textcleanerstyle.css">
     <script src="textcleaner.js"></script>
     <title>Text Cleaner</title>
 </head>
 <body>
-    <section id="section1">
-        <a href="index.html" class="home">Home</a>
-        <h1 class="textcleaner">Text Cleaner</h1>
-        <p class="description">A tool which cleans all emojis, special characters, uppercase letters, and displays plain lowercase text.</p>
-        <div class="container">
-            <div class="input">
+    <a href="index.html" class="home">Home</a>
+
+    <main class="app">
+        <h1>Text Cleaner</h1>
+        <p>A tool that removes emojis, symbols, and uppercase letters.</p>
+
+        <div class="panel">
+            <div class="box">
                 <textarea id="inputArea" placeholder="Enter text here..."></textarea>
-                <div class="buttcont">
-                    <button id="cleantext" onclick="cleanText()">Clean Text</button>
-                    <button id="cleartext" onclick="clearText()">Clear all</button>
+                <div class="actions">
+                    <button onclick="cleanText()">Clean</button>
+                    <button onclick="clearText()">Clear</button>
                 </div>
-                
             </div>
 
-            <div class="output">
-                <textarea id="outputArea" readonly placeholder="Cleaned text will appear here..."></textarea>
-                <button id="copytext" onclick="copyText(this)">Copy Text</button>
+            <div class="box output-box">
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                <textarea id="outputArea" readonly placeholder="Cleaned text..."></textarea>
             </div>
         </div>
-    </section>
+    </main>
 </body>
 </html>
