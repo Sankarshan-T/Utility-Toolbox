@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="unitconverter.css">
+    <script src="textcleaner.js"></script>
+    <title>Unit Converter</title>
+</head>
+<body>
+    <section id="section1">
+        <a href="index.html" class="home">Home</a>
+        <h1 class="unitconverter">Length Unit Converter</h1>
+        <p class="description">Simple tool which you definitely use very often. Converts length units.</p>
+        <div class="container">
+            <div class="input-group">
+                <h1 class="from">From</h1>
+                <input type="number" id="inputValue" placeholder="Enter value">
+                <select id="inputType">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+                
+            </div>
+            <div class="output-group">
+                <h1 class="to">To</h1>
+                <input type="number" id="outputValue" readonly>
+                <select id="outputType">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
