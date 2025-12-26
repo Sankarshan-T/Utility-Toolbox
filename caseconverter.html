@@ -19,20 +19,19 @@
         <p>A tool that converts uppercase letters to lowercase letters and vice versa.</p>
 
         <div class="panel">
-            <div class="box">
-                
+            <div class="box">                
                 <div class="actions">
                     <button onclick="convertLowerCase()">To lowercase</button>
                     <button onclick="convertUpperCase()">To uppercase</button>
-                    <button onclick="convertCamelCase()">To Sentence Case</button>
+                    <button onclick="convertCamelCase()">To camel Case</button>
                     <button onclick="clearText()">Clear</button>
                 </div>
-                <textarea id="inputArea" placeholder="Enter text here..."></textarea>
+                <textarea id="inputArea" placeholder="Enter text here..." spellcheck="false"></textarea>
             </div>
 
             <div class="box output-box">
                 <button class="copy-btn" onclick="copyText(this)">Copy</button>
-                <textarea id="outputArea" readonly placeholder="Converted text..."></textarea>
+                <textarea id="outputArea" readonly placeholder="Converted text..." spellcheck="false"></textarea>
             </div>
         </div>
     </main>

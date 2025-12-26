@@ -79,41 +79,42 @@ body {
 .text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+.toolbox:hover {
+    filter: drop-shadow(5px 5px 10px #1c6245);
+    transition: 0.3s ease-in-out filter;
 }
 
 .heading {
-    color: #fff;
-    background-color: #11141d9a;
+    color: #11141d;
     font-family: "Fira Code";
     user-select: none;
-    padding: 5px;
-    border-radius: 5px;
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 500;
     letter-spacing: -1px;
+    margin: 0;
 }
 
 .heading:hover {
-    box-shadow: 0 5px 20px #185f46;
-    transition: 0.2s ease-in-out box-shadow;
+    text-shadow: 0 10px 30px #11141d;
+    transition: 0.2s ease-in-out text-shadow;
 }
 
 .tagline {
     font-family: "Roboto Mono";
-    font-size: 1em;
-    color: #fff;
-    margin-top: -30px;
-    background-color: #11141d9a;
-    border-radius: 10px;
+    font-size: 1.5em;
+    color: #11141d;
+    margin: 0;
     width: fit-content;
-    padding: 5px;
     user-select: none;
 }
 
 .tagline:hover {
-    box-shadow: 0 5px 20px #185f46;
-    transition: 0.2s ease-in-out box-shadow;
+    text-shadow: 0 10px 30px #11141d;
+    transition: 0.2s ease-in-out text-shadow;
 }
 
 .checkapps {
@@ -121,14 +122,14 @@ body {
     width: fit-content;
     text-decoration: none;
     color: white;
-    background-color: #11141d9a;
+    background-color: #11141d;
     padding: 10px;
     border-radius: 10px;
 }
 
 .checkapps:hover {
-    background-color: #11141dd7;
-    box-shadow: 0 5px 10px #11141dd7;
+    background-color: #111d15;
+    box-shadow: 0 5px 10px #111d15;
     transition: 0.3s ease-in-out box-shadow;
 }
 
