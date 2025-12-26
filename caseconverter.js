@@ -14,6 +14,26 @@ function convertUpperCase() {
   outputArea.textContent = outputText;
 }
 
+function convertCamelCase() {
+  const outputArea = document.getElementById("outputArea");
+  const inputText = document.getElementById("inputArea").value;
+
+  const outputText = inputText
+    .split(/[\s-_]+/)
+    .filter(word => word.length > 0)
+
+    .map((word, index) => {
+      if (index === 0) {
+        return word.toLowerCase();
+    }
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+
+    .join('');
+
+    outputArea.textContent = outputText;
+
+}
 
 
 function copyText(button) {
