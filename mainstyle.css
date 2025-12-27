@@ -99,7 +99,7 @@ body {
 }
 
 .heading:hover {
-    text-shadow: 0 10px 30px #11141d;
+    text-shadow: 0 0 20px #11141d;
     transition: 0.2s ease-in-out text-shadow;
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .tagline:hover {
-    text-shadow: 0 10px 30px #11141d;
+    text-shadow: 0 0 20px #11141d;
     transition: 0.2s ease-in-out text-shadow;
 }
 
