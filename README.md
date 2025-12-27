@@ -1,2 +1,2 @@
 # Utility-Toolbox
-A web utility toolbox. A single website with multiple small utilities,
+A web utility toolbox. A single website with multiple small utilities. A simple, all-in-one web utility toolbox that brings together multiple small, practical tools in one place. From unit converters and text cleaners to password generators and random decision  tools, it’s designed to save time and simplify everyday tasks. The website is easy to navigate and offers a clean, user-friendly interface. Whether you’re a student, developer, or just need a quick solution, Utility-Toolbox has everything you need, all in one spot.
