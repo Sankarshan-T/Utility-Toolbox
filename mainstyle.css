@@ -214,3 +214,31 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* About */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/overlay.png");
+    background-size: 100% contain;
+    background-position: center;
+}
+
+.about {
+    font-family: "Fira Code";
+    margin: 0%;
+    font-size: 4em;
+}
+
+.text {
+    font-family: "Roboto MOno";
+    margin: 0%;
+    font-size: 2em;
+    width: 70%;
+    text-align: center;
+}
