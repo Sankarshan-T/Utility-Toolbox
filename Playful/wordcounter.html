@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="counter.css">
+    
+    <title>Word, Character Counter</title>
+</head>
+<body>
+    <a href="index.html" class="home">Home</a>
+
+    <main class="app">
+        <h1>Word, Character Counter</h1>
+        <p>A tool that counts the number of words and characters in the given text.</p>
+
+        <div class="container">
+            <textarea id="text" placeholder="Enter your text here..." spellcheck="false"></textarea>
+            <button id="choose" onclick="clearText()">Clear</button>
+            <p id="result"> Characters: ___ | Words: ___</p>
+        </div>
+
+    </main>
+    <script src="counter.js"></script>
+</body>
+</html>

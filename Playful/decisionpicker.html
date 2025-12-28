@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="decision.css">
+    <script src="decision.js"></script>
+    <title>Decision Picker</title>
+</head>
+<body>
+    <a href="index.html" class="home">Home</a>
+
+    <main class="app">
+        <h1>Decision Picker</h1>
+        <p>A tool that helps you choose between choices. Enter your choices separated by commas (NO SPACES) </p>
+
+        <div class="container">
+            <textarea id="choices" placeholder="Enter your choices separated by commas (NO SPACES) here..." spellcheck="false"></textarea>
+            <button id="choose" onclick="generateChoice()">Generate Random Choice</button>
+            <button id="choose" onclick="clearText()">Clear</button>
+            <p id="randomChoice"> Random Choice: _______________</p>
+        </div>
+
+    </main>
+</body>
+</html>

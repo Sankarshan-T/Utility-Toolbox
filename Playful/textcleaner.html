@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="textcleanerstyle.css">
+    <script src="textcleaner.js"></script>
+    <title>Text Cleaner</title>
+</head>
+<body>
+    <a href="index.html" class="home">Home</a>
+
+    <main class="app">
+        <h1>Text Cleaner</h1>
+        <p>A tool that removes emojis, symbols, and uppercase letters.</p>
+
+        <div class="panel">
+            <div class="box">
+                <textarea id="inputArea" placeholder="Enter text here..." spellcheck="false"></textarea>
+                <div class="actions">
+                    <button onclick="cleanText()">Clean</button>
+                    <button onclick="clearText()">Clear</button>
+                </div>
+            </div>
+
+            <div class="box output-box">
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                <textarea id="outputArea" readonly placeholder="Cleaned text..." spellcheck="false"></textarea>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

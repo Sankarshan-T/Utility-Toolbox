@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #3dcf91;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0c2e22;
+}
+
+/* Home button */
+.home {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+    background: #3b8a72;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.home:hover {
+    background: #2d6b58;
+}
+
+/* App container */
+.app {
+    background: #11141d;
+    padding: 30px;
+    border-radius: 12px;
+    width: 60%;
+    min-width: 300px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: "Fira Code", monospace;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #3dcf91;
+}
+
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    color: #3dcf91;
+}
+
+/* Converter layout */
+.converter {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #3dcf91;
+}
+
+/* Inputs */
+input,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    background: #8dcbb1;
+}
+
+input[readonly] {
+    background: #8dcbb1;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .converter {
+        flex-direction: column;
+    }
+}
