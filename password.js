@@ -12,6 +12,13 @@ const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numberChars = '0123456789';
 const symbolChars = '!@#$%^&*()_+-=[]{}|;:",.<>?';  
 
+    // lengthEl.addEventListener('input', () => {
+    //     if (lengthEl.value > 20) {
+    //         lengthEl.value = 20;
+    //     }
+    // });
+
+
 function getRandomChar(chars) {
     const crypto = window.crypto || window.msCrypto; // For IE 11
     const array = new Uint32Array(1);

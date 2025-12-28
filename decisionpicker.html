@@ -20,8 +20,11 @@
 
         <div class="container">
             <textarea id="choices" placeholder="Enter your choices separated by commas (NO SPACES) here..." spellcheck="false"></textarea>
-            <button id="choose" onclick="generateChoice()">Generate Random Choice</button>
-            <button id="choose" onclick="clearText()">Clear</button>
+            <div class="actions">
+                <button id="choose" onclick="generateChoice()">Generate Random Choice</button>
+                <button id="choose" onclick="clearText()">Clear</button>
+            </div>
+            
             <p id="randomChoice"> Random Choice: _______________</p>
         </div>
 
