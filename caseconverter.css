@@ -1,16 +1,19 @@
 * {
     box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: "Roboto Mono", monospace;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
 body {
-    background: #3dcf91;
+    background: radial-gradient(1200px 600px at 50% -200px, #1f2937, #020617);
+    color: #e5e7eb;
+    min-height: 100vh;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,44 +21,51 @@ body {
 
 .home {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    padding: 8px 14px;
-    background: #3b8a72;
-    color: #fff;
+    top: 20px;
+    left: 20px;
+    width: fit-content;
+    background: #38bdf8;
+    color: #020617;
+    padding: 12px 18px;
+    border-radius: 12px;
     text-decoration: none;
-    border-radius: 8px;
+    font-weight: 600;
 }
 
 .home:hover {
-    background: #285c4c;
+    background: #0ea5e9;
 }
 
 .app {
-    width: 95%;
-    max-width: 1500px;
-    background: #11141d;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    text-align: center;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 85%;
+    width: 70%;
+
+    background:linear-gradient(180deg,rgba(30, 41, 59, 0.85),rgba(15, 23, 42, 0.85));
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-h1 {
-    font-family: "Fira Code", monospace;
-    margin: 0;
-    color: #3dcf91;
-}
-
-p {
-    margin: 12px 0 24px;
-    color: #3dcf91;
-}
+h1, p {margin: 0;}
 
 .panel {
     display: flex;
     gap: 20px;
-    height: 400px;
+    height: 70%;
+    width: 80%;
 }
 
 .box {
@@ -72,9 +82,11 @@ textarea {
     border-radius: 8px;
     padding: 12px;
     font-size: 15px;
-    background: #8dcbb1;
     overflow-y: auto;
     scrollbar-width: none;
+    background: radial-gradient(1200px 600px at 0% -200px, #1f2937, #020617);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e5e7eb;
 }
 
 .actions {
@@ -84,18 +96,20 @@ textarea {
 
 button {
     flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #3dcf91;
-    color: #11141d;
+    width: fit-content;
+    background: #38bdf8;
+    color: #020617;
+    padding: 8px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
     font-family: "Fira Code", monospace;
-    font-size: 16px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
-    background: #27875f;
+    background: #0ea5e9;
 }
 
 
@@ -107,18 +121,8 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 4px 10px;
-    font-size: 13px;
-    border-radius: 6px;
-    background: #3b8a72;
-    color: #fff;
-    border: none;
-    cursor: pointer;
 }
 
-.copy-btn:hover {
-    background: #285c4c;
-}
 
 #outputArea {
     padding-top: 36px;
