@@ -2,23 +2,21 @@ function convertLowerCase() {
   const outputArea = document.getElementById("outputArea");
   const inputText = document.getElementById("inputArea").value;
 
-  const outputText = inputText.toLowerCase();
-  outputArea.textContent = outputText;
+  outputArea.value = inputText.toLowerCase();
 }
 
 function convertUpperCase() {
   const outputArea = document.getElementById("outputArea");
   const inputText = document.getElementById("inputArea").value;
 
-  const outputText = inputText.toUpperCase();
-  outputArea.textContent = outputText;
+  outputArea.value = inputText.toUpperCase();
 }
 
 function convertCamelCase() {
   const outputArea = document.getElementById("outputArea");
   const inputText = document.getElementById("inputArea").value;
 
-  const outputText = inputText
+  outputArea.value = inputText
     .split(/[\s-_]+/)
     .filter(word => word.length > 0)
 
@@ -30,16 +28,11 @@ function convertCamelCase() {
     })
 
     .join('');
-
-    outputArea.textContent = outputText;
-
 }
 
 
 function copyText(button) {
-    const outputtext = document.getElementById("outputArea").value;
-  
-    navigator.clipboard.writeText(outputtext)
+    navigator.clipboard.writeText(document.getElementById("outputArea").value);
     button.textContent = "Copied!";
     setTimeout(() => {
         button.textContent = "Copy";
